@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # Hydra Games
 
 Aplikasi Flutter untuk browsing dan mengoleksi game, dibuat sebagai latihan
@@ -18,5 +17,3 @@ Email dan password selain di atas akan ditolak dengan pesan
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-# 124240154_-Responsi-_-Mobile
-# 124240154_-Responsi-_-Mobile
