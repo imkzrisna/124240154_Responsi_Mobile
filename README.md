@@ -1,18 +1,52 @@
-# hydra_games
+cat > README.md <<'EOF'
+# Hydra Games
 
-A new Flutter project.
+Aplikasi Flutter untuk browsing dan mengoleksi game, dibuat sebagai latihan
+(124240154 - Responsi Mobile).
 
-## Getting Started
+## Akun Login
 
-This project is a starting point for a Flutter application.
+Gunakan email dan password berikut untuk masuk ke aplikasi:
 
-A few resources to get you started if this is your first Flutter project:
+| Email | Password |
+|---|---|
+| `kariz154@gmail.com` | `mobilecihuy` |
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Email dan password selain di atas akan ditolak dengan pesan
+"Email atau password salah".
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# 124240154_-Responsi-_-Mobile
+## Fitur
+
+- **Login:** validasi input, sesi disimpan dengan SharedPreferences.
+- **Beranda:** daftar game (thumbnail, nama, genre, platform) dari API.
+- **Detail:** hero image, info rilis, screenshot, deskripsi, dan tombol Get.
+- **Library:** daftar game yang dimiliki, disimpan dengan Hive, bisa dihapus.
+- **Profil:** email pengguna, jumlah game di library, dan logout.
+
+## Teknologi
+
+- Flutter dan Dart
+- Package `http` untuk REST API
+- SharedPreferences untuk data sesi
+- Hive dan Hive Flutter untuk database lokal
+
+## Sumber Data
+
+- Daftar game: https://www.freetogame.com/api/games
+- Detail game: https://www.freetogame.com/api/game?id={game_id}
+
+## Cara Menjalankan
+
+```bash
+flutter pub get
+dart run build_runner build --delete-conflicting-outputs
+flutter run -d chrome
+```
+
+## Menjalankan Tes
+
+```bash
+flutter analyze
+flutter test
+```
+EOF
